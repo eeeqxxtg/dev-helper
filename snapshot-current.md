@@ -78,11 +78,11 @@ var变量只有函数作用域，没有块级作用域
   // 8
 ```
 
-4.  let变量具有块级作用域
+4.  const/let变量具有块级作用域
 ```js
   function t5(){
     for (var i = 0; i< 9; i++) {
-      let v = i;
+      const v = i;
       setTimeout(() => console.log(v));
     }
   }
